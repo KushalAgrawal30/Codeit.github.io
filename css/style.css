@@ -1,0 +1,563 @@
+     @import url('../css/fonts.css');
+     html,
+     body {
+         margin: 0;
+         background-image: url(../img/body-bg.png);
+         scroll-behavior: smooth;
+     }
+     /**/
+     
+      :root {
+         /*   Theme Colors   */
+         --mulberry-crayola: hsla(314, 60%, 79%, 1);
+         --charleston-green: hsla(120, 2%, 17%, 1);
+         --beau-blue: hsla(207, 17%, 94%, 1);
+         --titanium-yellow: hsla(57, 100%, 91%, 1);
+         --sea-green-crayola: hsla(164, 99%, 99%, 1);
+         /* color */
+         --black: #050608;
+         --blue: #7785a8;
+         --light-blue: #acdbdf;
+         --whiteish: #f0ece2;
+         /* color */
+         /* gradient color */
+         --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+         /*  theme font-family  */
+         --Abel: 'Abel', cursive;
+         --Anton: 'Anton', cursive;
+         --Josefin: 'Josefin', cursive;
+         --Lexend: 'Lexend', cursive;
+         --Livvic: 'Livvic', cursive;
+         --Odibee: 'Odibee', cursive;
+         --VT: 'VT', cursive;
+     }
+     /**/
+     /* Universal classes */
+     
+     .flex-col {
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+     }
+     
+     ul {
+         list-style-type: none;
+     }
+     
+     a {
+         text-decoration: none;
+         color: rgb(44, 43, 43);
+         display: block;
+     }
+     
+     .nav-menu {
+         justify-content: space-between;
+     }
+     /* x Universal classes x */
+     /* Nav */
+     
+     .nav {
+         background-color: var(--blue);
+         position: fixed;
+         width: 10rem;
+         height: 100%;
+         z-index: 9;
+     }
+     
+     .nav-item {
+         display: flex;
+         flex-direction: column;
+         margin: 0;
+     }
+     
+     .nav .nav-item .nav-link {
+         padding: 1.6rem 0rem;
+         font-size: 1.4rem;
+         font-weight: 500;
+         position: relative;
+         font-family: var(--Abel);
+     }
+     
+     .nav .nav-item .nav-link .anim {
+         transition: all .2s;
+     }
+     
+     .nav .nav-item .nav-link .anim:hover {
+         font-size: 1.6rem;
+     }
+     
+     .nav .nav-brand a {
+         display: block;
+         color: var(--whiteish);
+         font-size: 2.3rem;
+         padding: 2.2rem 0.7rem;
+         font-family: var(--Lexend);
+     }
+     
+     .nav .nav-brand a .it {
+         color: var(--black);
+     }
+     
+     .nav .nav-item button {
+         border: none;
+         background-color: var(--mulberry-crayola);
+         padding: 0.3rem 0.7rem;
+         font-size: 1.4rem;
+         font-family: var(--Josefin);
+         color: white;
+         border-radius: 0.2rem;
+         cursor: pointer;
+         outline: none;
+         transition: 0.2s all;
+     }
+     
+     .nav .nav-item button a {
+         font-size: 1.4rem;
+         font-family: var(--Josefin);
+         color: white;
+     }
+     
+     .nav .nav-item button:hover {
+         padding: 0.3rem 1rem;
+     }
+     
+     .nav .social {
+         padding: 2.9rem 2.3rem;
+         font-size: 1.2rem;
+         display: flex;
+         flex-direction: row;
+     }
+     
+     .nav .social i {
+         transition: 0.2s all;
+     }
+     
+     .nav .social i {
+         padding: 0rem 0.2rem;
+     }
+     
+     .nav .social i:hover {
+         color: var(--light-blue);
+     }
+     /* x Nav x */
+     /* Main site */
+     
+     main .site-front .site-img img {
+         width: 100%;
+     }
+     
+     main .site-front .site-content {
+         position: absolute;
+         width: 50%;
+     }
+     
+     main .site-front .site-content h5 {
+         width: 100%;
+         position: relative;
+         top: 10%;
+         left: 35%;
+         color: white;
+         font-family: var(--Abel);
+         font-size: 2rem;
+     }
+     
+     main .site-front .site-content h5 span {
+         color: var(--light-blue);
+     }
+     
+     main .site-front .site-content h1 {
+         width: 100%;
+         position: relative;
+         top: 10%;
+         left: 35%;
+         color: var(--black);
+         font-family: var(--Livvic);
+         font-size: 4rem;
+     }
+     
+     main .site-front .site-content .student {
+         width: 100%;
+         position: absolute;
+         top: 90%;
+         left: 0;
+         color: rgb(255, 218, 218);
+         font-family: var(--Livvic);
+         font-size: 1.2rem;
+     }
+     
+     main .site-front .site-content button {
+         position: absolute;
+         top: 90%;
+         left: 35%;
+         border: none;
+         background-color: var(--mulberry-crayola);
+         padding: 0.3rem 1rem;
+         font-size: 1.4rem;
+         font-family: var(--Josefin);
+         color: white;
+         border-radius: 1rem;
+         cursor: pointer;
+         outline: none;
+         transition: 0.2s all;
+     }
+     
+     main .site-front .site-content button a {
+         color: white;
+     }
+     
+     main .site-front .site-content p {
+         width: 100%;
+         position: relative;
+         top: 60%;
+         left: 35%;
+         color: black;
+         font-family: var(--Livvic);
+         font-size: 1.75rem;
+         word-wrap: normal;
+     }
+     
+     main .site-front .site-content button:active {
+         background-color: transparent;
+     }
+     /**/
+     
+     main .site-second .site-content1 {
+         width: 50%;
+     }
+     
+     main .site-second .site-content1 p {
+         color: var(--black);
+         position: relative;
+         top: 10%;
+         left: 35%;
+         font-size: 1.6rem;
+         font-family: var(--Livvic);
+     }
+     
+     main .site-second .site-sec-img img {
+         float: right;
+         height: 21rem;
+         width: 21rem;
+         transition: all .2s;
+     }
+     
+     main .site-second .site-sec-img img:hover {
+         height: 22rem;
+         width: 22rem;
+     }
+     /*x*/
+     /**/
+     
+     main .site-third .site-content2 {
+         width: 50%;
+     }
+     
+     main .site-third .site-content2 h1 {
+         color: var(--black);
+         font-family: var(--Livvic);
+         font-size: 2rem;
+         position: relative;
+         left: 35%;
+     }
+     
+     main .site-third .site-content2 p {
+         color: var(--black);
+         font-size: 1.6rem;
+         position: relative;
+         left: 35%;
+         font-family: var(--Livvic);
+     }
+     /*x*/
+     /**/
+     
+     main .site-fourth {
+         background-color: var(--black);
+     }
+     
+     main .site-fourth img {
+         float: right;
+         height: 14rem;
+         width: 14rem;
+         margin-right: 3rem;
+         margin-top: 1rem;
+         transition: transform 0.7s ease-in-out;
+         border-radius: 50%;
+     }
+     
+     main .site-fourth img:hover {
+         transform: rotate(180deg);
+     }
+     
+     main .site-fourth .site-content3 {
+         padding: 0.5rem 0;
+         width: 50%;
+     }
+     
+     main .site-fourth .site-content3 h1 {
+         color: var(--light-blue);
+         font-size: 1.6rem;
+         position: relative;
+         left: 35%;
+         font-family: var(--Lexend);
+     }
+     
+     main .site-fourth .site-content3 p {
+         color: var(--light-blue);
+         font-size: 1.6rem;
+         position: relative;
+         left: 35%;
+         font-family: var(--Livvic);
+     }
+     /*x*/
+     /**/
+     
+     main .site-five h2 {
+         position: absolute;
+         left: 46.5%;
+         color: #282828;
+         font-family: var(--Lexend);
+         font-size: 2rem;
+     }
+     
+     main .site-five .site-content4 {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+     }
+     
+     main .site-five .site-content4 .proj1 {
+         border-radius: 10%;
+         width: 20rem;
+         height: 15rem;
+         max-height: 100rem;
+         margin: 2rem 0;
+         background-color: var(--light-blue);
+         position: relative;
+         left: 21%;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         transition: all 0.7s;
+     }
+     
+     main .site-five .site-content4 .proj2 {
+         border-radius: 10%;
+         width: 20rem;
+         height: 15rem;
+         margin: 2rem 0;
+         background-color: var(--light-blue);
+         position: relative;
+         left: 41%;
+         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+         transition: all 0.7s;
+     }
+     
+     main .site-five .site-content4 .proj1:hover {
+         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+     }
+     
+     main .site-five .site-content4 .proj2:hover {
+         box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+     }
+     
+     main .site-five .site-content4 .proj1 h1 {
+         position: inherit;
+         margin-bottom: 3rem;
+         margin-left: 4.3rem;
+         color: #282828;
+         font-family: var(--Lexend);
+     }
+     
+     main .site-five .site-content4 .proj2 h1 {
+         position: inherit;
+         margin-bottom: 3rem;
+         margin-left: 2rem;
+         color: #282828;
+         font-family: var(--Lexend);
+     }
+     
+     main .site-five .site-content4 .proj1 p {
+         color: #282828;
+         font-family: var(--Livvic);
+         text-align: center;
+     }
+     
+     main .site-five .site-content4 .proj2 p {
+         color: #282828;
+         font-family: var(--Livvic);
+         text-align: center;
+     }
+     
+     main .site-five .site-content4 .proj1 a {
+         color: #050608;
+         margin-left: 9.3rem;
+         font-size: 1.5rem;
+     }
+     
+     main .site-five .site-content4 .proj2 a {
+         color: #050608;
+         margin-left: 9.5rem;
+         font-size: 1.5rem;
+     }
+     /*x*/
+     /**/
+     
+     main .footer {
+         background-color: #282828;
+     }
+     
+     main .footer button {
+         position: relative;
+         left: 90%;
+         border: none;
+         background-color: var(--whiteish);
+         padding: 0.5rem 0.7rem;
+         margin-top: 0.6rem;
+         font-size: 1.4rem;
+         font-family: var(--Josefin);
+         border-radius: 1rem;
+         cursor: pointer;
+         outline: none;
+     }
+     
+     main .footer .footer-content {
+         padding: 0.5rem 0;
+         width: 50%;
+     }
+     
+     main .footer .footer-content h1 {
+         color: var(--whiteish);
+         position: relative;
+         left: 80%;
+         font-family: var(--Lexend);
+     }
+     
+     main .footer .footer-content p {
+         color: rgb(148, 147, 147);
+         position: relative;
+         left: 76%;
+         font-family: var(--Lexend);
+     }
+     
+     main .footer .socialf {
+         width: 30%;
+         padding: 4.9rem 2.3rem;
+         font-size: 1.2rem;
+         display: flex;
+         flex-direction: row;
+         position: relative;
+         left: 38%;
+     }
+     
+     main .footer .socialf a {
+         color: #282828;
+         border-radius: 50%;
+         padding: 0.9rem 0.3rem;
+         background-color: var(--light-blue);
+         margin-left: 1rem;
+     }
+     
+     main .footer .socialf i {
+         padding: 0rem 1rem;
+     }
+     /*x*/
+     /* Main site */
+     /*  media  */
+     
+     @media(max-width:880px) {
+         html {
+             font-size: 120%;
+         }
+     }
+     
+     @media(max-width:1150px) {
+         html {
+             font-size: 90%;
+         }
+     }
+     
+     @media(max-width:1025px) {
+         html {
+             font-size: 80%;
+         }
+     }
+     
+     @media(max-width:900px) {
+         html {
+             font-size: 60%;
+         }
+         .nav .nav-item .nav-link {
+             left: -20%;
+         }
+     }
+     
+     @media(max-width:700px) {
+         html {
+             font-size: 50%;
+         }
+         .nav .nav-item .nav-link {
+             left: -40%;
+         }
+     }
+     
+     @media(max-width:572px) {
+         html {
+             font-size: 40%;
+         }
+         .nav .nav-item .nav-link {
+             left: -45%;
+         }
+     }
+     
+     @media(max-width:450px) {
+         html {
+             font-size: 35%;
+         }
+         .nav .nav-item .nav-link {
+             left: -55%;
+         }
+     }
+     
+     @media(max-width:385px) {
+         html {
+             font-size: 30%;
+         }
+         .nav .nav-item .nav-link {
+             left: -75%;
+         }
+     }
+     
+     @media(max-width:335px) {
+         html {
+             font-size: 25%;
+         }
+         .nav .nav-item .nav-link {
+             left: -100%;
+         }
+     }
+     
+     @media(max-width:292px) {
+         html {
+             font-size: 20%;
+         }
+         .nav .nav-item .nav-link {
+             left: -150%;
+         }
+     }
+     
+     @media(max-width:235px) {
+         html {
+             font-size: 19%;
+         }
+         .nav .nav-item .nav-link {
+             left: -190%;
+         }
+     }
+     
+     @media(max-width:210px) {
+         html {
+             font-size: 14%;
+         }
+         .nav .nav-item .nav-link {
+             left: -230%;
+         }
+     }
+     /* x media x  */
