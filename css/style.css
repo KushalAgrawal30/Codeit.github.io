@@ -100,7 +100,7 @@
      
      .nav .nav-item button {
          border: none;
-         background-color: var(--mulberry-crayola);
+         background-color: var(--light-blue);
          padding: 0.3rem 0.7rem;
          font-size: 1.4rem;
          font-family: var(--Josefin);
@@ -193,7 +193,7 @@
          background-color: var(--mulberry-crayola);
          padding: 0.3rem 1rem;
          font-size: 1.4rem;
-         font-family: var(--Josefin);
+         font-family: var(--light-blue);
          color: white;
          border-radius: 1rem;
          cursor: pointer;
